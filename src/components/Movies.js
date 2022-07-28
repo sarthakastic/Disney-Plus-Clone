@@ -1,22 +1,41 @@
 import React from 'react'
 import styled from 'styled-components' 
-
+import ironman from "../images/ironman.jpg";
+import avatar from "../images/avatar.jpg";
+import memory from "../images/memory.jpg";
+import hobbit from "../images/hobbit.jpg";
+import tenet from "../images/tenet.jpg";
+import godfather from "../images/godfather.jpg";
+import johnwick from "../images/johnwick.jpg";
+import oblivion from "../images/oblivion.jpg";
 function Movies() {
   return (
     <Container>
         <h4>Recommended for You</h4>
         <Content>
             <Wrap>
-                <img src="/images/ironman.jpg"/>
+                <img src={avatar}/>
             </Wrap>
             <Wrap>
-                <img src="/images/ironman.jpg"/>
+            <img src={memory}/>
             </Wrap>
             <Wrap>
-                <img src="/images/ironman.jpg"/>
+            <img src={ironman}/>
             </Wrap>
             <Wrap>
-                <img src="/images/ironman.jpg"/>
+            <img src={hobbit}/>
+            </Wrap>
+            <Wrap>
+                <img src={tenet}/>
+            </Wrap>
+            <Wrap>
+            <img src={godfather}/>
+            </Wrap>
+            <Wrap>
+            <img src={johnwick}/>
+            </Wrap>
+            <Wrap>
+            <img src={oblivion}/>
             </Wrap>
 
         </Content>
@@ -27,6 +46,7 @@ function Movies() {
 export default Movies
 
 const Container= styled.div`
+padding-bottom: 2%;
 `
 
 const Content = styled.div`

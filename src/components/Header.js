@@ -1,42 +1,50 @@
 import React from "react";
 import styled from "styled-components";
+import home from "../images/home-icon.svg";
+import logo from "../images/logo.svg";
+import search from "../images/search-icon.svg";
+import watchlist from "../images/watchlist-icon.svg";
+import original from "../images/original-icon.svg";
+import movie from "../images/movie-icon.svg";
+import series from "../images/series-icon.svg";
+import profilepic from "../images/profilepic.jpg";
 
 function Header() {
   return( <Nav>
-    <Logo src="/images/logo.svg" />
+    <Logo src={logo} />
     <NavMenu>
         <a href="">
-            <img src="/images/home-icon.svg"/>
+            <img src={ home}/>
             <span>Home</span>
         </a>
         <a href="">
-            <img src="/images/search-icon.svg"/>
+            <img src={search}/>
             <span>Search</span>
         </a>
 
         <a href="">
-            <img src="/images/watchlist-icon.svg"/>
+            <img src={watchlist}/>
             <span>WatchList</span>
         </a>
-
+ 
         <a href="">
-            <img src="/images/original-icon.svg"/>
+            <img src={original}/>
             <span>originals</span>
         </a>
 
         <a href="">
-            <img src="/images/movie-icon.svg"/>
+            <img src={movie}/>
             <span>movies</span>
         </a>
         <a href="">
-            <img src="/images/series-icon.svg"/>
+            <img src={series}/>
             <span>series</span>
         </a>
 
         
 
     </NavMenu>
-    <UserImg  src="/images/profilepic.jpg"  />
+    <UserImg  src={profilepic}  />
     </Nav>
   )
 }

@@ -9,7 +9,7 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Link
+  
 } from "react-router-dom";
 import Detail from './components/Detail';
 import Login from './components/Login';

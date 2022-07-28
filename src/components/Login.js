@@ -1,18 +1,21 @@
 import React from 'react'
 import styled from 'styled-components'
+import ctaLogoOne from "../images/cta-logo-one.svg"
+import  ctaLogoTwo from "../images/cta-logo-two.png"
+import background from "../images/login-background.jpg"
 
 function Login() {
   return (
     <Container>
         <CTA>
-            <CTALogoOne src="/images/cta-logo-one.svg" />
+            <CTALogoOne src={ctaLogoOne} />
             <SignUp>
                 Get All There
             </SignUp>
             <Description>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat repellendus incidunt, perspiciatis totam dolorem suscipit illo explicabo voluptate aliquid fugit at eius dicta aut assumenda deserunt ipsum tenetur maiores nostrum!
             </Description>
-            <CTALogoTwo src="/images/cta-logo-two.png" />
+            <CTALogoTwo src={ctaLogoTwo} />
         </CTA>
     </Container>
   )
@@ -36,7 +39,7 @@ justify-content: center;
     content: "";
     left: 0;
     right:0; 
-    background-image: url("/images/login-background.jpg");
+    background-image: url({background});
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;

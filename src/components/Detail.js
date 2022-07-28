@@ -1,22 +1,26 @@
 import React from 'react'
 import styled from 'styled-components'
+import ironman from "../images/ironman.jpg"
+import black from "../images/play-icon-black.png"
+import white from "../images/play-icon-white.png"
+import group from "../images/group-icon.png"
 
 function Detail() {
   return (
     <Container>
         <Background>
-            <img src="/images/ironman.jpg"  />
+            <img src={ironman}  />
         </Background>
         <ImgTitle>
         <img src="https://pngimg.com/uploads/ironman/ironman_PNG44.png" alt="" />
         </ImgTitle>
         <Controls>
             <PlayButton>
-                <img src="/images/play-icon-black.png" alt="" />
+                <img src={black} alt="" />
                 <span>PLAY</span>
             </PlayButton>
             <TrailerButton>
-            <img src="/images/play-icon-white.png" alt="" />
+            <img src={white} alt="" />
                 <span>TRAILER</span>
             </TrailerButton>
             <AddButton>
@@ -25,7 +29,7 @@ function Detail() {
                 </span>
             </AddButton>
             <GroupButton>
-                <img src="/images/group-icon.png" alt="" />
+                <img src={group} alt="" />
             </GroupButton>
         </Controls>
         <Subtitle>

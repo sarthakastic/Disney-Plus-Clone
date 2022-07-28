@@ -1,22 +1,27 @@
 import React from "react";
 import styled from "styled-components";
+import disney from "../images/viewers-disney.png" 
+import pixar from "../images/viewers-pixar.png" 
+import marvel from "../images/viewers-marvel.png" 
+import starwars from "../images/viewers-starwars.png" 
+import national from "../images/viewers-national.png" 
 
 function Viewers() {
   return <Container>
     <Wrap>
-        <img src="/images/viewers-disney.png" alt=""/>
+        <img src={disney} alt=""/>
     </Wrap>
     <Wrap>
-        <img src="/images/viewers-pixar.png" alt=""/>
+        <img src={pixar} alt=""/>
     </Wrap>
     <Wrap>
-        <img src="/images/viewers-marvel.png" alt=""/>
+        <img src={marvel} alt=""/>
     </Wrap>
     <Wrap>
-        <img src="/images/viewers-starwars.png" alt=""/>
+        <img src={starwars} alt=""/>
     </Wrap>
     <Wrap>
-        <img src="/images/viewers-national.png" alt=""/>
+        <img src={national} alt=""/>
     </Wrap>
   </Container>;
 }
