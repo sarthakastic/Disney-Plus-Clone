@@ -7,7 +7,7 @@ import Home from './components/Home';
 
 import {
   BrowserRouter as Router,
-  Routes,
+  Routes,Link,
   Route,
   
 } from "react-router-dom";

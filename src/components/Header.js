@@ -8,15 +8,18 @@ import original from "../images/original-icon.svg";
 import movie from "../images/movie-icon.svg";
 import series from "../images/series-icon.svg";
 import profilepic from "../images/profilepic.jpg";
+import { Link }  from "react-router-dom"
 
 function Header() {
   return( <Nav>
+    <Link to="/">
     <Logo src={logo} />
+    </Link>
     <NavMenu>
-        <a href="">
+        <Link to="/">
             <img src={ home}/>
             <span>Home</span>
-        </a>
+        </Link>
         <a href="">
             <img src={search}/>
             <span>Search</span>
@@ -44,7 +47,9 @@ function Header() {
         
 
     </NavMenu>
+    <Link to="/login">
     <UserImg  src={profilepic}  />
+    </Link>
     </Nav>
   )
 }
